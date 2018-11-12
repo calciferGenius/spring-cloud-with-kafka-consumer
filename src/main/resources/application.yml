@@ -4,7 +4,14 @@ spring:
       bindings:
         greetings-in:
           destination: greetings
+          group: greetingsGroup
           contentType: application/json
-
+        test-data-input:
+          destination: test_data_channel
+          group : testDataGroup
+          contentType: application/json
 server:
   port: 9091
+
+
+  #
