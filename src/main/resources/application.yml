@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        greetings-in:
+          destination: greetings
+          contentType: application/json
+
+server:
+  port: 9091
